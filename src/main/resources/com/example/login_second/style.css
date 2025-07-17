@@ -1,0 +1,83 @@
+.root {
+    /* Only one background property is needed, use -fx-background-color for JavaFX */
+    -fx-background-color: linear-gradient(to bottom right, #e3f0ff, #f8fcff);
+    -fx-font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+.label-heading {
+    -fx-font-size: 28px;
+    -fx-font-family: 'Segoe UI Semibold', 'Arial', sans-serif;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2a3f54;
+    -fx-effect: dropshadow(gaussian, #b3c6e0, 2, 0.5, 1, 1);
+}
+
+.label-subheading {
+    -fx-font-size: 16px;
+    -fx-text-fill: #5a738e;
+    -fx-font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+.button-main {
+    -fx-background-color: linear-gradient(to right, #3498db, #6dd5fa);
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20;
+    -fx-padding: 8 24 8 24;
+    -fx-effect: dropshadow(gaussian, #b3c6e0, 2, 0.5, 1, 1);
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+    -fx-border-color: transparent;
+    /* -fx-transition is not a valid JavaFX property, so remove it */
+}
+.button-main:hover {
+    -fx-background-color: linear-gradient(to right, #217dbb, #48c6ef);
+    /* -fx-scale-x and -fx-scale-y are not supported in CSS, use animation in Java code */
+}
+
+.text-field, .password-field {
+    -fx-background-radius: 12;
+    -fx-border-color: #bfc9d2;
+    -fx-border-radius: 12;
+    -fx-padding: 8 12 8 12;
+    -fx-font-size: 14px;
+    -fx-background-color: #fafdff;
+}
+
+.table-view {
+    -fx-background-color: #fafdff;
+    -fx-border-radius: 10;
+    -fx-effect: dropshadow(gaussian, #b3c6e0, 2, 0.5, 1, 1);
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #3498db;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 32px;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: transparent transparent #e3f0ff transparent;
+}
+
+.table-view .table-row-cell:filled:selected, .table-view .table-row-cell:focused:selected {
+    -fx-background-color: #e3f0ff;
+}
+
+.hbox-signup {
+    -fx-alignment: center;
+    -fx-spacing: 8;
+}
+
+.button-secondary {
+    -fx-background-color: #e3f0ff;
+    -fx-text-fill: #3498db;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20;
+    -fx-padding: 8 24 8 24;
+    -fx-cursor: hand;
+}
+.button-secondary:hover {
+    -fx-background-color: #d0e6fa;
+}
